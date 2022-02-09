@@ -8,5 +8,24 @@
             "Height": "5'3",
             "Weight": "42 kilograms"
         }
+<<<<<<< HEAD
+=======
+    
+    ],
+    "contactInformation": [
+        {
+            "E-Mail": "brrybrry671@gmail.com",
+            "Mobile Number": "+6391234567890, 085-432-1234",
+            "Landline Number": "123-4567"
+        }
+    ],
+    "academicBackground/Education": [
+        {
+        "Elementary": "Placido Del Mundo Elementary School",
+        "Middle School": "Tandang Sora National High School",
+        "Senior High School": "School of Performing Arts Seoul",
+        "College": "Seoul National University"
+        }
+>>>>>>> bea3338 (adding contact info and education details)
 
 
