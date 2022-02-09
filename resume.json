@@ -8,8 +8,6 @@
             "Height": "5'3",
             "Weight": "42 kilograms"
         }
-<<<<<<< HEAD
-=======
     
     ],
     "contactInformation": [
@@ -26,6 +24,20 @@
         "Senior High School": "School of Performing Arts Seoul",
         "College": "Seoul National University"
         }
->>>>>>> bea3338 (adding contact info and education details)
+    ],
+    "Achievement/s": [
+        "With Honors (9th to 12th Grade)",
+        "DaMath Competition 3rd Place",
+        "Best in Chemistry (12th Grade)",
+        "Best in Physics (12th Grade)"
+    
+    ],
+    "Experiences": [
+        {
+        "Music": "Rhythm Guitar, Drums (Basic Drums), Bass Guitar (Basic Chords)",
+        "Church Ministry": "Youth Ministry, Music Ministry"
+        }
+    ]
 
+}
 
