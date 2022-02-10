@@ -3,8 +3,8 @@
         {
             "Name": "Jezell C. Domer",
             "Sex / Gender": "Female",
-            "Age": "18 years old",
             "Home Address": "Block 2 Lot 8 Berry Street, Bernarty Subdivision Barangay Alien Moon City",
+            "Age": "18 years old",
             "Height": "5'3",
             "Weight": "42 kilograms"
         }
@@ -24,12 +24,6 @@
         "Senior High School": "School of Performing Arts Seoul",
         "College": "Seoul National University"
         }
-    ],
-    "Achievement/s": [
-        "With Honors (9th to 12th Grade)",
-        "DaMath Competition 3rd Place",
-        "Best in Chemistry (12th Grade)",
-        "Best in Physics (12th Grade)"
     
     ],
     "Experiences": [
@@ -41,7 +35,14 @@
     ],
     "Additional Skills": [
         "Planning, strong communication, organization and prioritization"
-    ]
+        
+    ],
 
+    "Achievement/s": [
+        "With Honors (9th to 12th Grade)",
+        "DaMath Competition 3rd Place",
+        "Best in Chemistry (12th Grade)",
+        "Best in Physics (12th Grade)"
+    ]
 }
 
