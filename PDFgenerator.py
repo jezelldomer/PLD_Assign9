@@ -56,10 +56,31 @@ def body1(resumepdf):
     resumepdf.set_font("times", "B", 12) 
     resumepdf.cell(40, 6, "   Name          :  " + str(charac["primaryElements"][0]["Full Name"]), ln = 10)
     resumepdf.cell(40, 6, "Sex / Gender      :  " + str(charac["primaryElements"][0]["Sex / Gender"]), ln = 10)
-    resumepdf.cell(40, 6, "Age                     :  " + str(charac["primaryElements"][0]["Age"]), ln = 10)
     resumepdf.cell(40, 6, "Address   :  " + str(charac["primaryElements"][0]["Address"]), ln = 10)
+    resumepdf.cell(40, 6, "Age                     :  " + str(charac["primaryElements"][0]["Age"]), ln = 10)
     resumepdf.cell(40, 6, "Height                :  " + str(charac["primaryElements"][0]["Height"]), ln = 10)
     resumepdf.cell(40, 6, "Weight               :  " + str(charac["primaryElements"][0]["Weight"]), ln = 10)
+    resumepdf.ln(15) 
+
+def body2(resumepdf): 
+    resumepdf.set_font("castellar", "B", 20)
+    resumepdf.cell(90, 0, title2) 
+    resumepdf.ln(5) 
+    resumepdf.set_font("times", "B", 11) 
+    resumepdf.cell(40, 6, "E-Mail           :  " + str(charac["contactInformation"][0]["E-Mail"]), ln = 10)
+    resumepdf.cell(40, 6, "Mobile Number :  " + str(charac["contactInformation"][0]["Mobile Number"]), ln = 10)
+    resumepdf.cell(40, 6, "Landline Number       :  " + str(charac["contactInformation"][0]["Landline Number"]), ln = 10)
+    resumepdf.ln(15) 
+
+def body3(resumepdf): 
+    resumepdf.set_font("castellar", "B", 20) 
+    resumepdf.cell(90, 0, title3) 
+    resumepdf.ln(5) 
+    resumepdf.set_font("times", "B", 11) 
+    resumepdf.cell(40, 6, "Elementary                   :  " + str(charac["academicBackground/Education"][0]["Elementary"]), ln = 10)
+    resumepdf.cell(40, 6, "Middle School                 :  " + str(charac["academicBackground/Education"][0]["Middle School"]), ln = 10)
+    resumepdf.cell(40, 6, "Senior High School           :  " + str(charac["academicBackground/Education"][0]["Senior High School"]), ln = 10)
+    resumepdf.cell(40, 6, "University or College             :  " + str(charac["academicBackground/Education"][0]["College"]), ln = 10)
     resumepdf.ln(15) 
 
 
