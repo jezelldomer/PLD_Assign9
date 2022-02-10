@@ -5,7 +5,6 @@
 # 	- All personal details are stored in a JSON file
 # 	- Your program should read the JSON file and write the details in the PDF
 # 	- The output file should be: LASTNAME_FIRSTNAME.pdf
-
 # Note:
 # 	- Search for available PDF library that you can use
 # 	- Search how data is structured using JSON format
@@ -39,6 +38,29 @@ resumepdf = PdfFileReader
 with open(jsonPD, 'r+') as obj: 
     charac = json.loads(obj.read()) 
 resumepdf.add_page() 
+
+def design(resumepdf):
+    resumepdf.set_font('castellar', 'B', 27) 
+    resumepdf.set_text_color(0, 0, 200) 
+    resumepdf.cell(180, 35, Header, ln = 1, align = 'C'); 
+    resumepdf.set_font('arial', 'B', 27)
+    resumepdf.set_text_color(255, 165, 0)
+    resumepdf.cell(180, -10, YrandSec, ln = 0, align = 'C')
+    resumepdf.set_text_color(0, 0, 0) 
+
+
+def body1(resumepdf): 
+    resumepdf.ln(10) 
+    resumepdf.cell(90, 10, title1) 
+    resumepdf.ln(10) 
+    resumepdf.set_font("times", "B", 12) 
+    resumepdf.cell(40, 6, "   Name          :  " + str(charac["primaryElements"][0]["Full Name"]), ln = 10)
+    resumepdf.cell(40, 6, "Sex / Gender      :  " + str(charac["primaryElements"][0]["Sex / Gender"]), ln = 10)
+    resumepdf.cell(40, 6, "Age                     :  " + str(charac["primaryElements"][0]["Age"]), ln = 10)
+    resumepdf.cell(40, 6, "Address   :  " + str(charac["primaryElements"][0]["Address"]), ln = 10)
+    resumepdf.cell(40, 6, "Height                :  " + str(charac["primaryElements"][0]["Height"]), ln = 10)
+    resumepdf.cell(40, 6, "Weight               :  " + str(charac["primaryElements"][0]["Weight"]), ln = 10)
+    resumepdf.ln(15) 
 
 
 
