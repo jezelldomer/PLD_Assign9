@@ -27,9 +27,9 @@ save = 'Domer_Jezell.pdf'
 title1 = 'Personal Information'
 title2 = 'Contact Information'
 title3 = 'Education'
-title4 = 'Achievements'
+title4 = 'Additional Skills'
 title5 = 'Experiences'
-title6 = 'Additional Skills'
+title6 = 'Achievements'
 
 jsonPD = "resume.json" 
 
@@ -83,8 +83,34 @@ def body3(resumepdf):
     resumepdf.cell(40, 6, "University or College             :  " + str(charac["academicBackground/Education"][0]["College"]), ln = 10)
     resumepdf.ln(15) 
 
+def body4(resumepdf): 
+    resumepdf.set_font("castellar", "B", 20) 
+    resumepdf.cell(90, 0, title4) 
+    resumepdf.ln(5) 
+    resumepdf.set_font("times", "B", 12) 
+    resumepdf.cell(40, 6, "3. Music                                :  " + str(charac["Experiences"][0]["Music"]), ln = 10)
+    resumepdf.cell(40, 6, "4. Church Ministry                      :  " + str(charac["Experiences"][0]["Church Ministry"]), ln = 10)
+    resumepdf.ln(15) 
 
+def body5(resumepdf): 
+    resumepdf.set_font("castellar", "B", 20)
+    resumepdf.cell(90, 0, title5) 
+    resumepdf.ln(5) 
+    resumepdf.set_font("times", "B", 12) 
+    resumepdf.cell(40, 6, "" + str(charac["Additional Skills"][0]), ln = 10)
+    resumepdf.ln(15)
 
+def body6(resumepdf):
+    resumepdf.set_font("castellar", "B", 20) 
+    resumepdf.cell(90, 0, title6) 
+    resumepdf.ln(5) 
+    resumepdf.set_font("times", "B", 11) 
+    resumepdf.cell(40, 6, "A.  " + str(charac["Achievement/s"][0]), align = '')
+    resumepdf.cell(120, 6, "B.  " + str(charac["Achievement/s"][1]), ln = 10, align = 'C')
+    resumepdf.ln(0) 
+    resumepdf.cell(40, 6, "C.  " + str(charac["Achievement/s"][2]), align = '')
+    resumepdf.cell(150, 6, "D.  " + str(charac["Achievement/s"][3]), ln = 10, align = 'C')
+    resumepdf.ln(15)
 
 
 
