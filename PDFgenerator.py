@@ -1,5 +1,4 @@
 # Assignment 9
-
 # PDF Resume Creator
 # 	- Create a python program that will create your personal resume in PDF format
 # 	- All personal details are stored in a JSON file
@@ -12,13 +11,13 @@
 # 	- You will create the JSON file manually
 # 	- Your code should be in github before Feb12
 
-import os as access; from PyPDF2 import PdfFileReader; import json;
-
 # Import OS as to interact with the Microsoft Windows default settings.
 # I install and used the PyPDF2 (PDF File Reader - PyPDF2) imported on Python to generate my program to a PDF
 # Import JSON Source File 
 # I've updated my Python Version from 3.10 to 3.10.2
 # And the PIP Install Package used for External Modules 
+
+import os as access; from PyPDF2 import PdfFileReader; import json;
 
 Header = 'RESUME' 
 YrandSec = 'BSCOE 1-6' 
@@ -35,7 +34,7 @@ jsonPD = "resume.json"
 
 
 resumepdf = PdfFileReader 
-with open(jsonPD, 'r+') as obj: 
+with open(jsonPD, 'r') as obj: 
     charac = json.loads(obj.read()) 
 resumepdf.add_page() 
 
@@ -112,6 +111,23 @@ def body6(resumepdf):
     resumepdf.cell(150, 6, "D.  " + str(charac["Achievement/s"][3]), ln = 10, align = 'C')
     resumepdf.ln(15)
 
+def generatePDF():
+    design(resumepdf) 
+    body1(resumepdf)
+    body2(resumepdf)
+    body3(resumepdf) 
+    body4(resumepdf) 
+    body5(resumepdf) 
+    body6(resumepdf) 
 
+    
+generatePDF()
+
+
+resumepdf.set_auto_page_break(margin = 0.5, auto = True) 
+
+resumepdf.output(save)
+
+access.startfile(save)
 
 
