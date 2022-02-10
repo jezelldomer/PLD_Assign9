@@ -28,20 +28,23 @@
     ],
     "Experiences": [
         {
-        "Music": "Rhythm Guitar, Drums (Basic Drums), Bass Guitar (Basic Chords)",
-        "Church Ministry": "Youth Ministry, Music Ministry"
+        "Music":            "Rhythm Guitar, Drums (Basic Drums), Bass Guitar (Basic Chords)",
+        "Church Ministry":  "Youth Ministry, Music Ministry"
         }
 
     ],
     "Additional Skills": [
-        "Planning, strong communication, organization and prioritization"
+        "Planning", 
+        "Strong communication",
+        "Organization",
+        "Prioritization"
         
     ],
 
     "Achievement/s": [
         "With Honors (9th to 12th Grade)",
         "DaMath Competition 3rd Place",
-        "Best in Chemistry (12th Grade)",
+            "Best in Chemistry (12th Grade)",
         "Best in Physics (12th Grade)"
     ]
 }
